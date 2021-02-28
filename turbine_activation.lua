@@ -10,23 +10,17 @@ if reactor.getHotFluidProducedLastTick() >= 100 then
 else print("Not enough steam to initialize Turbine One!")
 end
 
-os.sleep(2)
-
 local turbine_02 = component.proxy(device.turbine_02)
 if reactor.getHotFluidProducedLastTick() >= 200 then
 	turbine_02.setEnabled(true)
 else print("Not enough steam to initialize Turbine Two!")
 end
 
-os.sleep(2)
-
-
 local turbine_03 = component.proxy(device.turbine_03) 
 if reactor.getHotFluidProducedLastTick() >= 300 then
 	turbine_03.setEnabled(true)
 else print("Not enough steam to initialize Turbine Three!")
 end
-os.sleep(2)
 
 local turbine_04 = component.proxy(device.turbine_04)
 if reactor.getHotFluidProducedLastTick() >= 400 then
@@ -34,15 +28,11 @@ if reactor.getHotFluidProducedLastTick() >= 400 then
 else print("Not enough steam to initialize Turbine Four!")
 end
 
-os.sleep(2)
-
 local turbine_05 = component.proxy(device.turbine_05)
 if reactor.getHotFluidProducedLastTick() >= 500 then
 	turbine_05.setEnabled(true)
 else print("Not enough steam to initialize Turbine Five!")
 end
-
-os.sleep(2)
 
 local turbine_06 = component.proxy(device.turbine_06)
 if reactor.getHotFluidProducedLastTick() >= 600 then
@@ -50,15 +40,11 @@ if reactor.getHotFluidProducedLastTick() >= 600 then
 else print("Not enough steam to initialize Turbine Six!")
 end
 
-os.sleep(2)
-
 local turbine_07 = component.proxy(device.turbine_07)
 if reactor.getHotFluidProducedLastTick() >= 700 then
 	turbine_07.setEnabled(true)
 else print("Not enough steam to initialize Turbine Seven!")
 end
-
-os.sleep(2)
 
 local turbine_08 = component.proxy(device.turbine_08)
 if reactor.getHotFluidProducedLastTick() >= 800 then
@@ -66,15 +52,13 @@ if reactor.getHotFluidProducedLastTick() >= 800 then
 else print("Not enough steam to initialize Turbine Eight!")
 end
 
-os.sleep(2)
-
 local turbine_09 = component.proxy(device.turbine_09)
 if reactor.getHotFluidProducedLastTick() >= 900 then
 	turbine_09.setEnabled(true)
 else print("Not enough steam to initialize Turbine Nine!")
 end
 
-os.sleep(5)
+os.sleep(10)
 
 
 
