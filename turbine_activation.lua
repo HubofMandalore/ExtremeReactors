@@ -3,7 +3,7 @@ local device = require("turbine_list")
 local reactor = component.br_reactor
 local turbine = component.it_steam_turbine
 
-print("Beginning startup phase for turbines. AFter the last turbine has initialized, type Cont Monitor to begin the next phase.")
+print("Beginning startup phase for turbines...")
 local turbine_01 = component.proxy(device.turbine_01)
 if reactor.getHotFluidProducedLastTick() >= 100 then
 	turbine_01.setEnabled(true)
@@ -59,8 +59,3 @@ else print("Not enough steam to initialize Turbine Nine!")
 end
 
 os.sleep(10)
-
-
-
-
-
